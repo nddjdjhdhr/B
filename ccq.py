@@ -190,30 +190,4 @@ if __name__ == "__main__":
     app.add_handler(MessageHandler(filters.TEXT & filters.Regex(r"^\.chk "), chk_handler))
 
     print("Bot is running...")
-    app.run_polling()_handler(MessageHandler(filters.TEXT & filters.Regex(r"^\.chk "), chk_handler))
-
-   lookup))
-    app.add_handler(MessageHandler(filters.TEXT & filters.Regex(r"^\.chk "), chk_handler))
-
-    print("Bot is running...")
-    app.run_polling()ssage\n"
-        "/help - Show this help message\n"
-        "/gen <6-digit BIN> - Generate test cards using a BIN\n"
-        ".chk <cc|mm|yy|cvv> - Check card with simulated result\n"
-        "/bin <6-digit BIN> - Look up BIN information\n\n"
-        "Bot Owner: @SIDIKI_MUSTAFA_92"
-    )
-    await update.message.reply_text(help_text)
-
-# Bot start
-if __name__ == "__main__":
-    app = ApplicationBuilder().token(BOT_TOKEN).build()
-
-    app.add_handler(CommandHandler("start", start))
-    app.add_handler(CommandHandler("help", help_command))
-    app.add_handler(CommandHandler("gen", gen_cards))
-    app.add_handler(CommandHandler("bin", bin_lookup))
-    app.add_handler(MessageHandler(filters.TEXT & filters.Regex(r"^\.chk "), chk_handler))
-
-    print("Bot is running...")
     app.run_polling()
